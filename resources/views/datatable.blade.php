@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('content')
-    <table class="table table-bordered" id="users-table">
+    <table class="table b-table table-striped table-hover" id="users-table">
         <thead>
             <tr>
                 <th>Id</th>
@@ -9,10 +9,11 @@
                 <th>Email</th>
                 <th>Created At</th>
                 <th>Updated At</th>
-                <th>Actions</th>
+                <th>Assign survey</th>
             </tr>
         </thead>
     </table>
+
 @stop
 
 @push('scripts')

@@ -16,7 +16,7 @@ class AddSurveyIdToUsersTable extends Migration
         Schema::table('users', function(Blueprint $table)
         {
             $table->unsignedInteger('survey_id')->nullable()->after('payment_method_token');
-            $table->foreign('survey_id')->references('id')->on('surveys');
+            $table->foreign('survey_id')->references('id')->on('surveys')->onDelete('cascade');
         });
     }
 
@@ -27,7 +27,7 @@ class AddSurveyIdToUsersTable extends Migration
      */
     public function down()
     {
-        Schema::table('surgeons', function(Blueprint $table)
+        Schema::table('users', function(Blueprint $table)
         {
             $table->dropColumn('survey_id');
         });

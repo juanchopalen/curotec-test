@@ -8,14 +8,21 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import BootstrapVue from 'bootstrap-vue'
+import Toasted from 'vue-toasted';
 
+Vue.use(BootstrapVue);
+
+//*Toasted
+Vue.use(Toasted,  {duration: 3000, iconPack : 'fontawesome', theme: 'outline'})
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('survey-index', require('./components/Index.vue'));
+Vue.component('survey-edit', require('./components/Edit.vue'));
 
 const app = new Vue({
     el: '#app'

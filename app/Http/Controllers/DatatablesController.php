@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Survey;
 use App\User;
 use Illuminate\Http\Request;
 use Yajra\Datatables\Datatables;
@@ -28,10 +27,10 @@ class DatatablesController extends Controller
     public function anyData()
     {
         $users = User::select(['id', 'name', 'email', 'password', 'survey_id', 'created_at', 'updated_at']);
-        $surveys = Survey::all();
+
         return Datatables::of($users)
             ->addColumn('action', function($user){
-                return view('add_survey', compact('user'))->render();
+                return view('assignSurvey', compact('user'))->render();
             })
             ->make(true);
     }
