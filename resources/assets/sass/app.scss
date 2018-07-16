@@ -14,3 +14,19 @@
 }
 
 @import '~bootstrap-vue/dist/bootstrap-vue.css';
+
+.label-required{
+    color: red ;
+    font-weight: bold ;
+}
+.label-valid{
+    color: green ;
+    font-weight: bold ;
+}
+
+.col-10{
+width: 10%;
+}
+.col-35{
+width: 35%;
+}

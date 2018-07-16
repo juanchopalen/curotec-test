@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/datatable', 'DatatablesController@getIndex')->name('index');
 Route::get('/anyData', 'DatatablesController@anydata')->name('datatables.data');
 
-Route::post('/save_survey', 'SurveyController@assingUser')->name('survey.assign_user');
+Route::post('/save_survey', 'SurveyController@assignUser')->name('survey.assign_user');
 
 Route::get('/survey', function(){
     return view('survey');

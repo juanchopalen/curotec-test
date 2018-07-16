@@ -134,12 +134,3 @@
         },
     }
 </script>
-<style type="text/css">
-  .col-10{
-    width: 10%;
-  }
-  .col-35{
-    width: 35%;
-  }
-
-</style>

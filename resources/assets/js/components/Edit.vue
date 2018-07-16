@@ -59,14 +59,3 @@
         }
     }
 </script>
-
-<style>
-    .label-required{
-        color: red ;
-        font-weight: bold ;
-    }
-    .label-valid{
-        color: green ;
-        font-weight: bold ;
-    }
-</style>

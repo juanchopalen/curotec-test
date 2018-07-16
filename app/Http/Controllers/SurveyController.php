@@ -64,7 +64,7 @@ class SurveyController extends Controller
      * Methos to assign a survey to user
      * @return response
      */
-    public function assingUser()
+    public function assignUser()
     {
         $user = User::find(request()['user_id']);
 
